@@ -77,6 +77,7 @@ export const portafolioData = [
 		repoURL: '',
 		anim: 'fade-right',
 	}
+    
 ];
 
 const skillIcons = {

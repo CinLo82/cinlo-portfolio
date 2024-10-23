@@ -1,5 +1,5 @@
 {
-  "name": "primer-blog",
+  "name": "cinlo-portfolio",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -23,7 +23,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SofiDevO/portfolio-astrosofidev-garrux.git"
+    "url": "https://github.com/CinLo82/cinlo-portfolio"
   },
   "keywords": [
     "astro",
@@ -35,10 +35,10 @@
     "css",
     "tailwind"
   ],
-  "author": "SofiDev / Garrux",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SofiDevO/portfolio-astrosofidev-garrux/issues"
+    "url": "https://github.com/CinLo82/cinlo-portfolio"
   },
-  "homepage": "https://github.com/SofiDevO/portfolio-astrosofidev-garrux#readme"
+  "homepage": "https://github.com/CinLo82/cinlo-portfolio"
 }
+ 
