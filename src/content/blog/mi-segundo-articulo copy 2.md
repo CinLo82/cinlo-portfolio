@@ -8,7 +8,7 @@ heroImage: "../img/girl1.jpg"
 
 ## JavaScript: Explorando Funciones y Comprendiendo Variables
 
-![javascript image](/img/monachina2.jpg)
+![javascript image](/img/girl1.jpg)
 
 En esta segunda entrega de nuestra guía práctica de JavaScript, nos sumergiremos en el fascinante mundo de las funciones y exploraremos las sutilezas entre `var`, `let` y `const`. Prepárate para desentrañar estos conceptos cruciales en tu viaje por el desarrollo web.
 

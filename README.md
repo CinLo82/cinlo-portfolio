@@ -1,6 +1,10 @@
 # Portafolio de Cintia Losada
 
+
+El portafolio está desplegado en [Netlify](https://cintialosada-portfolio.netlify.app/).
+
 ![Portada](image-1.png)
+
 
 ## Descripción
 

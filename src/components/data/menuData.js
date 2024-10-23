@@ -1,14 +1,15 @@
 export const mainMenu = [
-     {link:"#", content:"Home", icon:"lucide:home"},
-     {link:"#about", content:"About", icon:"octicon:person-24"},
-     {link:"#skills", content:"Skills", icon:"mdi:skills"},
-     {link:"#portafolio", content:"Portfolio", icon:"carbon:portfolio"},
-     {link:"#blog", content:"Blog", icon:"mdi:blog"},
+     {link:"#", content:"Inicio", icon:"lucide:home"},
+     {link:"#about", content:"Sobre mi", icon:"octicon:person-24"},
+     {link:"#skills", content:"Habilidades", icon:"mdi:skills"},
+     {link:"#portafolio", content:"Proyectos", icon:"carbon:portfolio"},
+     {link:"#blog", content:"Artículos", icon:"mdi:blog"},
      
 ]
 export const menuBlog = [
-     {link:"/", content:"Home", icon:"lucide:home"},
-     {link:"/#about", content:"About", icon:"octicon:person-24"},
-     {link:"/#skills", content:"Skills", icon:"octicon:person-24"},
-     {link:"/#portafolio", content:"Portfolio", icon:"carbon:portfolio"},
+     {link:"/", content:"Inicio", icon:"lucide:home"},
+     {link:"/#about", content:"Sobre mi", icon:"octicon:person-24"},
+     {link:"/#skills", content:"Habilidades", icon:"octicon:person-24"},
+     {link:"/#portafolio", content:"Proyectos", icon:"carbon:portfolio"},
+     {link:"/#blog", content:"Artículos", icon:"mdi:blog"},
 ]
