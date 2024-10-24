@@ -8,7 +8,7 @@ heroImage: "../img/girl1.jpg"
 
 ## Flexbox y Grid: Potentes herramientas de maquetación en CSS
 
-![Flexbox y Grid image](/img/girl1.jpg)
+## ![Flexbox y Grid image](/img/girl1.jpg)
 
 En este artículo, profundizaremos en dos de las herramientas más poderosas que ofrece CSS para la maquetación web: **Flexbox** y **Grid**. Ambas son esenciales para diseñar sitios web modernos y adaptables.
 

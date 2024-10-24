@@ -2,12 +2,12 @@
 title: "TypeScript: Crea tu Portafolio con Astro"
 description: "Guía paso a paso para crear un portafolio web usando TypeScript y Astro"
 pubDate: 'Oct 23 2024'
-heroImage: "../img/lucio.jpg"
+heroImage: "../img/monachina2.jpg"
 ---
 
 ## Crea tu portafolio con Astro
 
-## ![Astro Portfolio](/img/lucio.jpg)
+## ![Astro Portfolio](/img/monachina2.jpg)
 
 Si eres desarrollador web y quieres construir un portafolio moderno, rápido y fácil de mantener, **Astro** es una excelente opción. En este artículo, te guiaré paso a paso en la creación de un portafolio personal utilizando **Astro** junto con **TypeScript**, una herramienta poderosa que te permite añadir tipado a tu código y detectar errores con mayor facilidad durante el desarrollo.
 

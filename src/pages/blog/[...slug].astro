@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
+import Boton from "../../components/atoms/Boton.astro";
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -17,7 +18,11 @@ const { Content } = await post.render();
 
 <BlogLayout {...post.data}>
 	<Content />
+    <div class="flex justify-center m-5 max-w-full px-3">
+        <Boton href="/blog" texto="Ver mas"/>
+    </div>
 </BlogLayout>
+
 
 <style is:global>
 	p {
@@ -27,10 +32,12 @@ const { Content } = await post.render();
 		display: flex;
 		justify-content: center;
 	}
-	p > img {
+	.blog__section p > img {
 		width: 100%;
-		max-width: 80rem;
-		min-width: 27rem;
+		max-width: 40rem; 
+        min-width: 20rem;
+        border-radius: 1rem;
+
 	}
 	h2,
 	h3,
@@ -60,5 +67,9 @@ const { Content } = await post.render();
 		h2{
 			font-size:2rem;
 		}
+        .blog__section p > img {
+            max-width: 30rem; 
+            min-width: 15rem;
+        }
 	}
 </style>
