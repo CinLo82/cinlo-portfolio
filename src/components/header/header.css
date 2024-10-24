@@ -47,6 +47,8 @@
 
 .header .links a {
 	position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .header .links a::after {
@@ -141,6 +143,8 @@
 		max-width: max-content;
 		color: #33f3c6;
 		position: absolute;
+        top: 1rem;
+        right: 1rem;
 		border: 2px solid #33f3c6;
 		pointer-events: all;
 		animation: linear scroll-btn;
