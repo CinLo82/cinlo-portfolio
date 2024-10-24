@@ -149,7 +149,12 @@
 
     .header .links a .menu-text {
         display: none;
-      }
+    }
+
+    .header .header__list {
+        justify-content: space-around;
+        width: 100%;
+    }
 }
 
 @keyframes scroll-btn {
