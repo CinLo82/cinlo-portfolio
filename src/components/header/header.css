@@ -126,6 +126,8 @@
 	.icons {
 		display: block;
 	}
+    
+
 	.menu__btn {
 		display: flex;
 		justify-content: center;
@@ -144,6 +146,10 @@
 		animation: linear scroll-btn;
 		animation-timeline: scroll();
 	}
+
+    .header .links a .menu-text {
+        display: none;
+      }
 }
 
 @keyframes scroll-btn {
