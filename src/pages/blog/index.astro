@@ -12,10 +12,10 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <Layout title="blog">
-	<Header origin={menuBlog} name="Cintia Losada" />
-	<main class="self-center w-full">
+	<Header class="menu-blog" origin={menuBlog} name="Cintia Losada" />
+	<main class="self-center w-full mt-48">
 		<section class="blog__section min-h-[100dvh]">
-			<ul class="blog__elements">
+			<ul class="blog__elements pb-10">
 				{
 					posts.map((post) => (
 						<li>

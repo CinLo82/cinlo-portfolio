@@ -6,11 +6,11 @@ import Card from './card-portfolio/CardPortfolio.astro';
 
 <section
 	id="portafolio"
-	class="flex flex-col w-full  justify-center items-center h-auto min-h-[100dvh]  "
+	class="flex flex-col pb-10 w-full justify-center items-center h-auto min-h-[100dvh]  "
 >
 	<div class="portfolio__container">
-		<Title contenido="Portafolio" />
-		<div class="portfolio__elements">
+		<Title contenido="Portafolio" margin="2rem"/>
+		<div  class="portfolio__elements grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 			{getPortafolioData.map((props) => <Card {...props} />)}
 		</div>
 	</div>

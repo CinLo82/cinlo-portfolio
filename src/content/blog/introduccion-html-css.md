@@ -1,7 +1,7 @@
 ---
-title: "Introducción a HTML y CSS"
-description: "Fundamentos de HTML y CSS"
-pubDate: 'Oct 23 2024'
+title: "Desarrollo web: Introducción a HTML y CSS"
+description: "Funciones y Comprendiendo Variables"
+pubDate: 'Jul 23 2024'
 heroImage: "../img/html-css.jpg"
 ---
 

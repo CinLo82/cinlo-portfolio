@@ -1,158 +1,143 @@
 ---
-title: "JavaScript:Crea tu portafolio con astro"
-description: "Funciones y Comprendiendo Variables, soy el post más nuevo"
-pubDate: 'Apr 26 2024'
+title: "TypeScript: Crea tu Portafolio con Astro"
+description: "Guía paso a paso para crear un portafolio web usando TypeScript y Astro"
+pubDate: 'Oct 23 2024'
 heroImage: "../img/lucio.jpg"
 ---
 
+## Crea tu portafolio con Astro
 
+## ![Astro Portfolio](/img/lucio.jpg)
 
+Si eres desarrollador web y quieres construir un portafolio moderno, rápido y fácil de mantener, **Astro** es una excelente opción. En este artículo, te guiaré paso a paso en la creación de un portafolio personal utilizando **Astro** junto con **TypeScript**, una herramienta poderosa que te permite añadir tipado a tu código y detectar errores con mayor facilidad durante el desarrollo.
 
-![javascript image](/img/lucio.jpg)
+## ¿Qué es Astro?
 
-En esta segunda entrega de nuestra guía práctica de JavaScript, nos sumergiremos en el fascinante mundo de las funciones y exploraremos las sutilezas entre `var`, `let` y `const`. Prepárate para desentrañar estos conceptos cruciales en tu viaje por el desarrollo web.
+**Astro** es un **generador de sitios estáticos** que permite crear sitios modernos y rápidos. Su característica principal es que renderiza HTML de manera estática y solo utiliza JavaScript o TypeScript cuando es absolutamente necesario, lo que mejora el rendimiento.
 
-## Funciones en JavaScript
+### Ventajas de Usar Astro con TypeScript
 
-Las funciones son bloques de código reutilizables que realizan una tarea específica. Crear una función implica dos pasos fundamentales: la declaración y la ejecución.
+**Cero JavaScript por defecto**: Menos código en el navegador, lo que reduce el tiempo de carga.<br>
+**Compatibilidad con múltiples frameworks**: Puedes usar React, Vue, Svelte o Solid.<br>
+**TypeScript integrado**: Mejor detección de errores, tipado estático y autocompletado para una mejor experiencia de desarrollo.
 
-### Declaración de Funciones
+## Inicia tu Proyecto con Astro y TypeScript
 
-```javascript
-function saludar(nombre) {
-  console.log(`¡Hola, ${nombre}!`);
+### Paso 1: Instalar Astro
+
+Primero, necesitas instalar Astro. En tu terminal, ejecuta el siguiente comando:
+
+```bash
+npm create astro@latest
+```
+Durante el proceso de configuración, asegúrate de seleccionar TypeScript como tu lenguaje preferido. Esto permitirá que tu proyecto use TypeScript desde el inicio, garantizando un mejor manejo de tipos en tu código.
+
+### Paso 2: Estructura del Proyecto
+Astro organiza el proyecto en directorios clave como src, public, y pages. En la carpeta pages es donde crearás las diferentes secciones de tu portafolio.
+
+Por ejemplo, para tu página de inicio, crea el archivo src/pages/index.astro:
+
+```astro
+---
+title: "Bienvenido a Mi Portafolio"
+---
+
+<h1>Hola, soy Cintia Losada</h1>
+<p>Desarrolladora web especializada en frontend.</p>
+```
+Astro permite usar sintaxis similar a HTML, pero con la potencia de TypeScript para manejar cualquier lógica que necesites.
+
+### Paso 3: Añadir TypeScript
+Astro te permite incluir lógica usando TypeScript sin que se genere JavaScript innecesario. Para usar TypeScript en tu archivo .astro, puedes escribir código tipado directamente:
+
+```typescript
+---
+interface Proyecto {
+  nombre: string;
+  descripcion: string;
 }
+
+let proyectos: Proyecto[] = [
+  { nombre: "Proyecto 1", descripcion: "Un sitio web de ecommerce" },
+  { nombre: "Proyecto 2", descripcion: "Un blog personal" }
+];
+---
+
+<h2>Mis Proyectos</h2>
+<ul>
+  {proyectos.map((proyecto) => (
+    <li>
+      <strong>{proyecto.nombre}</strong>: {proyecto.descripcion}
+    </li>
+  ))}
+</ul>
 ```
+El uso de interfaces y el tipado estático en TypeScript te ayudará a evitar errores comunes y mejorar la calidad del código.
 
-Aquí, `saludar` es el nombre de la función, y `(nombre)` son los parámetros que puede aceptar.
+### Paso 4: Estilos con Tailwind CSS
+Astro también es compatible con Tailwind CSS, un framework muy popular para estilos. Para instalar Tailwind, sigue estos pasos:
 
-### Ejecución de Funciones
-
-```javascript
-saludar("Juan");
-// Salida: ¡Hola, Juan!
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
 ```
+Luego, añade las directivas de Tailwind en src/styles/global.css:
 
-Al llamar a la función `saludar` con el argumento `"Juan"`, ejecutamos el código dentro de la función y obtenemos la salida esperada.
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+A partir de aquí, puedes usar clases de Tailwind en tus componentes para estilizar rápidamente tu portafolio.
 
-### Tipos de Funciones
+### Paso 5: Integración de HTML, CSS y TypeScript
+Astro permite una integración fluida de HTML y CSS con la lógica de TypeScript. Puedes crear componentes reutilizables que combinen ambos, como una galería de proyectos:
 
-#### Funciones con Valor de Retorno
-
-```javascript
-function sumar(a, b) {
-  return a + b;
+```astro
+---
+interface Proyecto {
+  nombre: string;
+  imagen: string;
 }
 
-let resultado = sumar(3, 5);
-// resultado: 8
-```
+const proyectos: Proyecto[] = [
+  { nombre: "Proyecto 1", imagen: "/img/proyecto1.jpg" },
+  { nombre: "Proyecto 2", imagen: "/img/proyecto2.jpg" }
+];
+---
 
-#### Funciones Anónimas
+<h2>Galería de Proyectos</h2>
+<div class="gallery">
+  {proyectos.map((proyecto) => (
+    <div class="project-card">
+      <img src={proyecto.imagen} alt={proyecto.nombre} />
+      <h3>{proyecto.nombre}</h3>
+    </div>
+  ))}
+</div>
 
-```javascript
-let saludar = function(nombre) {
-  console.log(`¡Hola, ${nombre}!`);
-};
-
-saludar("Ana");
-// Salida: ¡Hola, Ana!
-```
-
-
-#### Arrow Functions
-
-```javascript
-let multiplicar = (a, b) => a * b;
-
-let producto = multiplicar(4, 6);
-// producto: 24
-```
-
-Las funciones de flecha (`arrow functions`) son una forma más concisa de escribir funciones.
-
-### Variables: var, let y const
-
-![javascript image](/img/monachina.jpg)
-
-### `var`
-
-```javascript
-function ejemploVar() {
-  if (true) {
-    var x = 10;
+<style>
+  .gallery {
+    display: grid;
+    gap: 1rem;
   }
-  console.log(x);
-}
-
-ejemploVar();
-// Salida: 10
-```
-
-`var` tiene un ámbito de función, lo que significa que su declaración se eleva al nivel superior de su contexto de ejecución.
-
-### `let`
-
-```javascript
-function ejemploLet() {
-  if (true) {
-    let y = 20;
+  .project-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
   }
-  console.log(y); // ¡Error!
-}
-
-ejemploLet();
+</style>
 ```
+Este ejemplo muestra cómo puedes crear una galería de proyectos usando TypeScript para gestionar los datos y CSS o Tailwind para el diseño.
 
-`let` tiene un ámbito de bloque, lo que significa que está limitado al bloque de código más cercano.
+## Despliegue y Optimización
+Una vez que hayas completado el desarrollo de tu portafolio, puedes construir el sitio para producción con:
 
-### `const`
-
-```javascript
-function ejemploConst() {
-  const PI = 3.14;
-  console.log(PI);
-}
-
-ejemploConst();
-// Salida: 3.14
+```bash
+npm run build
 ```
+Esto generará archivos estáticos en la carpeta dist que puedes desplegar en plataformas como Netlify, Vercel o cualquier servicio de hosting estático.
 
-En este ejemplo, `const` se utiliza para declarar una constante `PI` y se le asigna el valor de `3.14`. Aunque es posible asignar un valor a `const` solo una vez, ten en cuenta que esto no impide que el contenido del objeto al que se refiere cambie si es un objeto mutable.
+Astro optimiza automáticamente tu sitio, minimizando el uso de JavaScript en el navegador y entregando HTML estático para una carga ultrarrápida.
 
-## Scope en JavaScript
-
-El scope se refiere a la accesibilidad y visibilidad de las variables en diferentes partes del código.
-
-### Scope Global
-
-```javascript
-let globalVar = "Soy global";
-
-function ejemploScopeGlobal() {
-  console.log(globalVar);
-}
-
-ejemploScopeGlobal();
-// Salida: Soy global
-```
-
-### Scope Local
-
-```javascript
-function ejemploScopeLocal() {
-  let localVar = "Soy local";
-  console.log(localVar);
-}
-
-ejemploScopeLocal();
-// Salida: Soy local
-
-console.log(localVar); // ¡Error!
-```
-
-Las variables declaradas con `let` y `const` tienen un ámbito de bloque, limitando su accesibilidad al bloque en el que se declaran.
-
-## Conclusión
-
-En esta parte de nuestra guía de JavaScript, hemos explorado cómo crear y ejecutar funciones, así como las diferencias entre `var`, `let` y `const`. Entender estos conceptos es esencial para construir aplicaciones sólidas y comprender cómo las variables afectan el flujo y la estructura de tu código. En la próxima entrega, nos sumergiremos en conceptos más avanzados y te llevaremos a través de ejercicios prácticos para consolidar tus conocimientos. ¡Sigue explorando y desbloquea el potencial de JavaScript en tus proyectos web! 🚀✨
+### Conclusión
+Crear un portafolio con Astro y TypeScript es una excelente manera de destacar tus habilidades como desarrollador web. La combinación de un sitio ligero y rápido con el poder de TypeScript te permitirá ofrecer una experiencia de usuario optimizada y profesional. ¡Sigue explorando las posibilidades con Astro y lleva tu portafolio al siguiente nivel!
