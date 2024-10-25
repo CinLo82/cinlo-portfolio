@@ -2,12 +2,12 @@
 title: "Buenas Prácticas en CSS: Mantenibilidad y Escalabilidad"
 description: "Cómo escribir CSS limpio y eficiente para proyectos escalables"
 pubDate: 'Aug 13 2024'
-heroImage: "../img/joaquin.jpg"
+heroImage: "../img/joaquin.webp"
 ---
 
 ## Buenas Prácticas en CSS: Mantenibilidad y Escalabilidad
 
-## ![javascript image](/img/joaquin.jpg)
+## ![javascript image](/img/joaquin.webp)
 
 Escribir CSS eficiente y mantenible es esencial cuando trabajas en proyectos de desarrollo web a largo plazo. En este artículo, exploraremos algunas buenas prácticas para escribir CSS limpio y escalable, facilitando el trabajo en equipo y el mantenimiento futuro del código.
 

@@ -3,12 +3,12 @@ title: "Flexbox y Grid: herramientas de maquetación en CSS"
 description: "Explorando Flexbox y Grid para crear diseños web eficientes"
 pubDate: 'jul 27 2024'
 updatedDate: 'Aug 27 2024'
-heroImage: "../img/girl1.jpg"
+heroImage: "../img/cindy.webp"
 ---
 
 ## Flexbox y Grid: Potentes herramientas de maquetación en CSS
 
-## ![Flexbox y Grid image](/img/girl1.jpg)
+## ![Flexbox y Grid image](/img/cindy.webp)
 
 En este artículo, profundizaremos en dos de las herramientas más poderosas que ofrece CSS para la maquetación web: **Flexbox** y **Grid**. Ambas son esenciales para diseñar sitios web modernos y adaptables.
 
@@ -64,8 +64,10 @@ Aquí, hemos creado una cuadrícula con tres columnas de igual tamaño (1fr sign
 
 Aunque tanto Flexbox como Grid son herramientas potentes, cada una tiene su lugar dependiendo del diseño:
 
-- Flexbox es mejor para layouts unidimensionales (filas o columnas). Útil para menús, barras de navegación, y listas de elementos.
-- Grid es ideal para layouts bidimensionales (filas y columnas). Perfecto para la maquetación de páginas completas o componentes más complejos como galerías de imágenes.
+#### Flexbox 
+es mejor para layouts unidimensionales (filas o columnas). Útil para menús, barras de navegación, y listas de elementos.
+#### Grid 
+es ideal para layouts bidimensionales (filas y columnas). Perfecto para la maquetación de páginas completas o componentes más complejos como galerías de imágenes.
 
 ### Integrando Flexbox y Grid
 
@@ -84,6 +86,6 @@ Ambos modelos pueden usarse en conjunto para crear layouts aún más dinámicos.
 }
 ```
 
-## Conclusión
+### Conclusión
 
 Flexbox y Grid son herramientas clave para cualquier desarrollador web que quiera crear diseños eficientes y adaptables. A medida que creas nuevos proyectos, experimentar con ambos te permitirá optimizar el diseño y la organización de los elementos de tus páginas web. ¡Empieza a probar con estos dos sistemas de maquetación y lleva tus sitios a un nuevo nivel de profesionalismo! 🚀

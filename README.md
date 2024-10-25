@@ -3,7 +3,7 @@
 
 El portafolio está desplegado en [Netlify](https://cintialosada-portfolio.netlify.app/).
 
-![Portada](image-1.png)
+![Portada](image-1.webp)
 
 
 ## Descripción

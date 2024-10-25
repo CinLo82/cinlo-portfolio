@@ -2,12 +2,12 @@
 title: "Media Queries: Adaptando sitios webs a diferentes dispositivos"
 description: "Cómo utilizar media queries para hacer sitios web responsivos"
 pubDate: 'Sep 02 2024'
-heroImage: "../img/lucio.jpg"
+heroImage: "../img/lucio.webp"
 ---
 
 ## Media Queries: Adaptando tu sitio web a diferentes dispositivos
 
-### ![Media Queries](/img/lucio.jpg)
+### ![Media Queries](/img/lucio.webp)
 
 
 En el mundo actual, es crucial que los sitios web se vean bien en cualquier dispositivo. <br>

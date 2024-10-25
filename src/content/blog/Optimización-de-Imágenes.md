@@ -2,12 +2,12 @@
 title: "Optimización de Imágenes: Mejora la Velocidad de tu Sitio"
 description: "Cómo optimizar imágenes para mejorar el rendimiento y la velocidad de carga de tu sitio web"
 pubDate: 'Aug 19 2024'
-heroImage: "../img/telma.jpg"
+heroImage: "../img/telma.webp"
 ---
 
 ## Optimización de Imágenes en la web: Mejora la Velocidad de tu Sitio
 
-### ![javascript image](/img/telma.jpg)
+### ![javascript image](/img/telma.webp)
 
 Las imágenes juegan un papel crucial en el diseño de sitios web, pero también pueden afectar negativamente el rendimiento si no se gestionan adecuadamente. En este artículo, te enseñaremos cómo optimizar imágenes para mejorar la velocidad de tu sitio web, sin sacrificar la calidad visual.
 

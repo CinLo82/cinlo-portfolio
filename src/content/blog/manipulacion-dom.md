@@ -2,12 +2,12 @@
 title: "JavaScript: Manipulación del DOM, crea interfases dinámicas"
 description: "Cómo usar JavaScript para interactuar con el DOM y crear experiencias interactivas en la web"
 pubDate: 'Oct 08 2024'
-heroImage: "../img/nicolas.jpg"
+heroImage: "../img/nicolas.webp"
 ---
 
 ## Manipulación del DOM con JavaScript: Creando Interfaces Dinámicas
 
-## ![DOM Manipulation with JavaScript](/img/nicolas.jpg)
+## ![DOM Manipulation with JavaScript](/img/nicolas.webp)
 
 Uno de los aspectos más poderosos de JavaScript es su capacidad para interactuar con el **DOM** (Document Object Model) y permitir que los desarrolladores creen interfaces dinámicas y interactivas. En este artículo, exploraremos cómo usar JavaScript para modificar el DOM en tiempo real y crear experiencias web atractivas.
 

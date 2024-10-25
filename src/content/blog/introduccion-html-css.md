@@ -2,13 +2,13 @@
 title: "Desarrollo web: Introducción a HTML y CSS"
 description: "Funciones y Comprendiendo Variables"
 pubDate: 'Jul 23 2024'
-heroImage: "../img/html-css.jpg"
+heroImage: "../img/lili.webp"
 ---
 
 ## Introducción a HTML y CSS
 
 
-![HTML y CSS](/img/html-css.jpg)
+![HTML y CSS](/img/lili.webp)
 
 En esta entrega de nuestra serie sobre desarrollo web, exploraremos los fundamentos de HTML y CSS, dos tecnologías esenciales para la creación de sitios web. Si estás comenzando en este emocionante mundo, este artículo es para ti.
 

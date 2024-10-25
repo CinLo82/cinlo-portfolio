@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import './hero.css';
 
 ---
@@ -14,12 +15,14 @@ import './hero.css';
                 Tengo experiencia en el uso de tecnologías modernas y herramientas de diseño.
 			</p>
 		</div>
-    <img
+    <Image
 		class="hero__img"
-		src="/img/cintia-losada.png"
+		src="/img/cintia-losada.webp"
 		alt="Cintia Losada"
 		width="384"
     	height="384"
+        format={['webp', 'jpeg']} 
+        placeholder="blur" 
 	/>
 	</div>
 </section>

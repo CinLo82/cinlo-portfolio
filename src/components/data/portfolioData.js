@@ -17,7 +17,7 @@
  */
 export const portafolioData = [
 	{
-		imgSrc: '/img/landing-tesla.png',
+		imgSrc: '/img/landing-tesla.webp',
 		title: 'Landing Tesla',
 		skills: ['Astro', 'Tailwind', 'JavaScript'],
 		descripcion:
@@ -27,7 +27,7 @@ export const portafolioData = [
 		anim: 'fade-right',
 	},
 	{
-		imgSrc: '/img/dashboard-react.png',
+		imgSrc: '/img/dashboard-react.webp',
 		title: 'Dashboard Statistics',
 		skills: ['React', 'JavaScript'],
 		descripcion:
@@ -38,7 +38,7 @@ export const portafolioData = [
 		averageBrightness: 0.1,
 	},
 	{
-		imgSrc: '/img/react-router.png',
+		imgSrc: '/img/react-router.webp',
 		title: 'CinLo Router - NPM Package ',
 		skills: ['React', 'CSS'],
 		descripcion:
@@ -48,7 +48,7 @@ export const portafolioData = [
 		anim: 'fade-left',
 	},
 	{
-		imgSrc: '/img/movies.png',
+		imgSrc: '/img/movies.webp',
 		title: 'Coffe Store',
 		skills: ['JavaScript', 'CSS'],
 		descripcion:
@@ -58,7 +58,7 @@ export const portafolioData = [
 		anim: 'fade-left',
 	},
 	{
-		imgSrc: '/img/lista-tareas.png',
+		imgSrc: '/img/lista-tareas.webp',
 		title: 'ToDo App - React',
 		skills: ['React', 'CSS'],
 		descripcion:
@@ -68,7 +68,7 @@ export const portafolioData = [
 		anim: 'fade-left',
 	},
 	{
-		imgSrc: '/img/cinlo-blog.png',
+		imgSrc: '/img/cinlo-blog.webp',
 		title: 'CinLo Blog',
 		skills: ['TypeScript', 'Tailwind', 'Astro'],
 		descripcion:
@@ -78,7 +78,7 @@ export const portafolioData = [
 		anim: 'fade-right',
 	},
     {
-		imgSrc: '/img/videojuego.png',
+		imgSrc: '/img/videojuego.webp',
 		title: 'Videojuego-basico',
 		skills: ['HTML', 'CSS', 'JavaScript'],
 		descripcion:
@@ -88,7 +88,7 @@ export const portafolioData = [
 		anim: 'fade-right',
 	},
     {
-		imgSrc: '/img/landing-travel.png',
+		imgSrc: '/img/landing-travel.webp',
 		title: 'Travel Tailwind ',
 		skills: ['HTML', 'JavaScript', 'Tailwind'],
 		descripcion:
